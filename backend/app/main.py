@@ -10,11 +10,15 @@ from .ats_client import get_ats_score
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://ai-resume-agent.vercel.app",   # your frontend
+        "http://localhost:3000",                # for local testing
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 UPLOAD_DIR = Path('/tmp/uploads')
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
