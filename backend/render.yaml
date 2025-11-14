@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-resume-agent-backend
+    env: docker
+    dockerfilePath: Dockerfile
+    instanceType: starter
+    envVars:
+      - key: OPENAI_API_KEY
+      - key: ATS_API_KEY
+      - key: SECRET_KEY

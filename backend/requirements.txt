@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+requests
+python-docx
+Jinja2
+PyPDF2
+pdfplumber
+python-dotenv
+jinja2
+latexmk
+PyMuPDF
+docxtpl
+openai
